@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: #333;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+form label {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+form input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #28a745;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background: #218838;
+}
+
+ul {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li span {
+    flex: 1;
+    text-align: left;
+    color: #333;
+}
+
+ul li button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: #007bff;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+ul li button:hover {
+    color: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    
+    background-color: #f4f4f4;
+    color: #333;
+}

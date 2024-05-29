@@ -1,0 +1,43 @@
+<h1>Personas</h1>
+
+<h2>Crear Persona</h2>
+<form (submit)="createPersona()">
+  <label for="nombre">Nombre:</label>
+  <input id="nombre" [(ngModel)]="persona.nombre" name="nombre" required>
+
+  <label for="direccion">Dirección:</label>
+  <input id="direccion" [(ngModel)]="persona.direccion" name="direccion" required>
+
+  <label for="telefono">Teléfono:</label>
+  <input id="telefono" [(ngModel)]="persona.telefono" name="telefono" required>
+
+  <button type="submit">Crear</button>
+</form>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Dirección</th>
+      <th>Teléfono</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let persona of personas">
+      <td>{{ persona.id }}</td>
+      <td>{{ persona.nombre }}</td>
+      <td>{{ persona.direccion }}</td>
+      <td>{{ persona.telefono }}</td>
+      <td>
+        <button (click)="updatePersona(persona)">
+            <img src="assets/icons/pencil.svg" alt="Editar" width="20">
+        </button>
+        <button (click)="deletePersona(persona.id)">
+            <img src="assets/icons/trash.svg" alt="Eliminar" width="20">
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

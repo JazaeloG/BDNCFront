@@ -1,0 +1,18 @@
+<body>
+<h2>Editar Persona</h2>
+<form>
+  <label for="nombre">Nombre:</label>
+  <input id="nombre" [(ngModel)]="personaEditar.nombre" name="nombre" required>
+
+  <label for="direccion">Dirección:</label>
+  <input id="direccion" [(ngModel)]="personaEditar.direccion" name="direccion" required>
+
+  <label for="telefono">Teléfono:</label>
+  <input id="telefono" [(ngModel)]="personaEditar.telefono" name="telefono" required>
+
+  <div class="button-group">
+    <button type="button" (click)="guardarCambios()">Guardar</button>
+    <button type="button" (click)="cancelar()">Cancelar</button>
+  </div>
+</form>
+</body>
